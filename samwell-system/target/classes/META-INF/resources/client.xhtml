@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>New Client</title>
+</h:head>
+
+<h:body>
+
+
+	<h:form id="Client">
+
+		<p:panel header="Adsim">
+			<h:panelGrid columns="2" cellpadding="4">
+				<h:outputText value="Name: " />
+				<h:inputText id="name" value="#{clientsView.name}" />
+
+				<h:outputText value="Adress: " />
+				<h:inputText id="adress" value="#{clientsView.adress}" />
+
+				<h:outputLabel for="phone" value="Phone:" />
+				<p:inputMask id="phone" value="#{maskView.phone}"
+					mask="(999) 999-9999" />
+
+				<h:outputLabel for="email1" value="Email:" />
+				<p:inputText id="email1" value="#{clientsView.email}">
+					<f:validateRegex
+						pattern="[\w\.-]*[a-zA-Z0-9_]@[\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]" />
+				</p:inputText>
+				<p:message for="email1" display="tooltip" />
+				<h:outputText value="#{clientsView.email}" />
+
+				<h:commandButton id="submit" value="Submit"
+					action="#{clientsView.save}" update="confirmation"
+					icon="pi pi-save" oncomplete="PF('greetingDialog').show()" />
+			</h:panelGrid>
+		</p:panel>
+
+		<p:dialog header="Confirmation" widgetVar="confirmationDialog"
+			modal="true" resizable="false">
+			<h:panelGrid id="confirmation" columns="1" cellpadding="4">
+				<h:outputText value="#{clientsView.showDialog()}" />
+			</h:panelGrid>
+		</p:dialog>
+
+	</h:form>
+</h:body>
+</html>

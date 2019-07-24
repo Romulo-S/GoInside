@@ -1,0 +1,15 @@
+com\goinside\pojo\Orders.class
+com\goinside\view\EmailConstraintValidator.class
+com\goinside\view\EmailValidator.class
+com\goinside\service\OrderService.class
+com\goinside\repository\OrdersRepository.class
+com\goinside\service\ClientService.class
+com\goinside\repository\ClientsRepository.class
+com\goinside\view\EmailClientValidationConstraint.class
+com\goinside\view\Email.class
+com\goinside\pojo\Clients.class
+com\goinside\bo\ClientBO.class
+com\goinside\bo\OrderBO.class
+com\goinside\samwellsystem\SamwellSystemApplication.class
+com\goinside\view\OrderView.class
+com\goinside\view\ClientsView.class

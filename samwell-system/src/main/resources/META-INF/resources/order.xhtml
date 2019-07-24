@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>New Client</title>
+</h:head>
+
+<h:body>
+
+
+
+	<h:form id="Order">
+
+		<p:panel header="Adsim">
+			<h:panelGrid columns="2" cellpadding="4">
+				<h:outputText value="Title: " />
+				<p:inputText id="title" value="#{orderView.title}" />
+
+				<h:outputLabel for="quantity" value="Quantity: " />
+				<p:spinner id="quantity" value="#{orderView.quantity}" />
+
+				<p:outputLabel for="price" value="Price unity:" />
+				<p:inputNumber id="price" value="#{orderView.price}">
+				</p:inputNumber>
+
+				<p:outputLabel for="totalPrice" value="Total Price:" />
+				<p:inputNumber id="totalPrice" value="#{orderView.totalPrice}">
+				</p:inputNumber>
+
+				<p:commandButton id="submit" value="Submit" update="greeting-panel"
+					oncomplete="PF('greetingDialog').show()" />
+			</h:panelGrid>
+		</p:panel>
+
+		<p:dialog header="Greeting" widgetVar="greetingDialog" modal="true"
+			resizable="false">
+			<h:panelGrid id="greeting-panel" columns="1" cellpadding="4">
+				<h:outputText value="#{helloWorld.showGreeting()}" />
+			</h:panelGrid>
+		</p:dialog>
+
+	</h:form>
+</h:body>
+</html>

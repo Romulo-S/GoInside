@@ -1,0 +1,15 @@
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\samwellsystem\SamwellSystemApplication.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\view\Email.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\repository\OrdersRepository.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\repository\ClientsRepository.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\bo\ClientBO.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\service\OrderService.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\view\OrderView.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\pojo\Orders.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\view\ClientsView.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\view\EmailValidator.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\view\EmailClientValidationConstraint.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\pojo\Clients.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\service\ClientService.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\bo\OrderBO.java
+C:\Users\romul\eclipse-workspace\samwell-system\src\main\java\com\goinside\view\EmailConstraintValidator.java
